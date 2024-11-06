@@ -11,12 +11,15 @@ class University:  #university Class
         print(f"your gud name is {self.name}")
         print(f"your city is {self.city}")
         print(f"your hostel is {self.hostel}")
-        
+
 
     class Department: #Department Class
         def __init__(self):
             print("hellop welcome to the department class")
             self.library=self.Library()
+        def branch(self,branch,section):
+            self.branch=branch
+            self.section=section   
         class Library: #library Class
             def __init__(self):
                 print("hello welcome to the library class")
