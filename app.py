@@ -38,13 +38,15 @@ d=college.Department()
 e=d.Library()
 print("please enter the process you want to move further")
 print("U-University\nD-Department\nL-Library\nE-Exit")
-option=input("please enter any input you wanted to go forward")
-if option.lower()=="u":
-    pass
-elif option.lower()=="d":
-    pass
-elif option.lower()=="l":
-    pass
-elif option.lower()=="e":
-    sys.exit()
-e.add_book(college)
+while True:
+    option=input("please enter any input you wanted to go forward")
+    if option.lower()=="u":
+        pass
+    elif option.lower()=="d":
+        pass
+    elif option.lower()=="l":
+        e.add_book(college)
+    elif option.lower()=="e":
+        sys.exit()
+    else:
+        print("please enter the correct input for furter movement")
