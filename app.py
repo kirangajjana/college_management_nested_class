@@ -42,7 +42,11 @@ while True:
     print("U-University\nD-Department\nL-Library\nE-Exit")
     option=input("please enter any input you wanted to go forward")
     if option.lower()=="u":
-        pass
+        college.display()
+        output=input("do you wanted to continue type yes|no")
+        if output.lower()=="no":
+            sys.exit()
+
     elif option.lower()=="d":
         pass
     elif option.lower()=="l":
@@ -51,3 +55,4 @@ while True:
         sys.exit()
     else:
         print("please enter the correct input for furter movement")
+        print("*"*50)
