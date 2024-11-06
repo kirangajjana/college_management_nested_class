@@ -8,11 +8,12 @@ class University:  #university Class
         self.name=name #instance variable
         self.city=city #instance variable
         self.hostel=hostel
-    def info(self):   #instance Method
-        print("hello welcome to the university campus")
-        print(f"your gud name is {self.name}") #printing instance variabl;e
-        print(f"your city is {self.city}") #printing instance variable
-        print(f"your hostel is {self.hostel}") #printing instance variable
+    def display(self):
+        print(f"college {University.college}")
+        print(f"branch {University.branch}")
+        print(f"hello mr {self.name}")
+        print(f"City {self.city}")
+        print(f"hostel {self.hostel}")    
 
 
     class Department: #Department Class
@@ -23,6 +24,15 @@ class University:  #university Class
             self.branch=branch #instance variable
             self.section=section #instance variable
         class Library: #library Class
-            def __init__(self):
+            def __init__(self): #instance method
                 print("hello welcome to the library class")
-college=University()
+                self.book="new"
+            def add_book(self,a): #instance method
+                a.display()
+                
+            def remove_book(self): #instance method
+                pass    
+college=University("kiran gajjana","hyderabad","nit1")
+d=college.Department()
+e=d.Library()
+e.add_book(college)
