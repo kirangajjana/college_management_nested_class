@@ -1,4 +1,5 @@
 #building an college management system basic functionalities using nested classes and nested method concepts
+import sys
 class University:  #university Class
     college="National Institute of Technology Sikkim" #static variable
     branch="Ravangla" # static variable
@@ -35,4 +36,15 @@ class University:  #university Class
 college=University("kiran gajjana","hyderabad","nit1")
 d=college.Department()
 e=d.Library()
+print("please enter the process you want to move further")
+print("U-University\nD-Department\nL-Library\nE-Exit")
+option=input("please enter any input you wanted to go forward")
+if option.lower()=="u":
+    pass
+elif option.lower()=="d":
+    pass
+elif option.lower()=="l":
+    pass
+elif option.lower()=="e":
+    sys.exit()
 e.add_book(college)
