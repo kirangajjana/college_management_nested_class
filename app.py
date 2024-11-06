@@ -1,5 +1,7 @@
 #building an college management system basic functionalities using nested classes and nested method concepts
 class University:  #university Class
+    college="National Institute of Technology Sikkim" #static variable
+    branch="Ravangla" # static variable
     def __init__(self,name,city,hostel): #instance method
         print("hello welcome to the university class")
         self.department=self.Department() #instance variables
