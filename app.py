@@ -37,8 +37,9 @@ college=University("kiran gajjana","hyderabad","nit1")
 d=college.Department()
 e=d.Library()
 print("please enter the process you want to move further")
-print("U-University\nD-Department\nL-Library\nE-Exit")
+
 while True:
+    print("U-University\nD-Department\nL-Library\nE-Exit")
     option=input("please enter any input you wanted to go forward")
     if option.lower()=="u":
         pass
